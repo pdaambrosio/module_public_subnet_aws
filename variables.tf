@@ -41,3 +41,9 @@ variable "internet_gateway_id" {
   type = string
   description = "The ID of the Internet Gateway."
 }
+
+variable "extra_tags" {
+  type = map(string)
+  description = "A map of tags to add to all resources."
+  default = {}
+}
